@@ -1,0 +1,520 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+    color: #555;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.hero-text-box h1::selection{
+    background-color: green;
+}
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("hero.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero-text-box
+{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%,50%);
+
+}
+.hero-text-box h1{
+    margin-bottom: 20px;
+    padding: 0;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    
+}
+.hero-text-box .btn
+{
+    padding: 10px 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.hero-text-box .btn-full:visited,
+.hero-text-box .btn-full:link
+{
+    background-color: orange;
+    color: #fff;
+
+    border-radius: 200px;
+}
+.hero-text-box .btn-ghost:visited,
+.hero-text-box .btn-ghost:link
+
+{
+    color: orange;
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 200px;
+}
+.hero-text-box .btn-full:hover
+{
+    background-color: orangered;
+}
+.hero-text-box .btn-ghost:hover
+{
+    border: 1px solid orangered;
+    color: orangered;
+}
+nav .row img
+{
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 40px;
+    float: left;
+}
+nav ul
+{
+    float: right;
+    margin-top: -80px;
+}
+nav .main-nav li{
+    display: inline-block;
+    margin-right: 15px;
+}
+nav .main-nav li a
+{
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+nav .main-nav li a:hover{
+    border-bottom: 2px solid orange;
+}
+.section-features{
+    padding: 80px 30px;
+}
+
+section h2
+{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 180%;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid orange;
+}
+
+.long-copy
+{
+    width: 70%;
+    margin-left: 15%;
+    line-height: 140%;
+}
+.box{
+    padding: 1%;
+}
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+.box p
+{
+    line-height: 145%;
+}
+.icon-big{
+    font-size: 300%;
+    color: orange;
+    margin-bottom: 10px;
+    display: block;
+}
+.row{
+    width: 100%;
+}
+.meals-showcase
+{
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li
+{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meals-photo
+{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+.meals-photo img
+{
+    width: 100%;
+    height: auto;
+    transition: all .5s ease-out;
+}
+.meals-photo img:hover
+{
+    transform: scale(1.15);
+    transition:.5s ;
+}
+.section-meals
+{
+    padding: 0;
+}
+.section-steps{
+    padding-top: 50px;
+}
+.section-steps h2
+{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.works-step
+{
+    margin-bottom: 50px;
+}
+.steps-box:first-child
+{
+    text-align: center;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+.steps-box:last-child
+{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+.app-screen
+{
+    width: 40%;
+}
+.works-step div
+{
+    color: orange;
+    border: 4px solid orange;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+}
+.section-cities
+{
+    margin: 0;
+    padding: 0 0 0 25px;
+}
+.section-cities h2{
+    margin-left: 40px;
+    text-align: center;
+
+}
+.city
+{
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.city img
+{
+    width: 100%;
+    height: auto;
+    transition: all .5s ease-out;
+    margin-bottom: 20px;
+}
+.city img:hover
+{
+    transform: scale(1.2);
+}
+.city-feature{
+    margin-bottom: 10px;
+}
+.city-feature a{
+    font-weight: 400;
+    color: orange;
+    text-decoration: none;
+    padding-bottom: 30px;
+}
+.city-feature a:hover{
+
+    text-decoration: none;
+    color: orangered;
+}
+.icon-small
+{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: orange;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+}
+.section-testimonials h2
+{
+    padding-top: 50px;
+    margin-left: 50px;
+    font-weight: 400;
+    color: #fff;
+}
+#testimonial
+{
+    margin-left: 15px;
+}
+.section-testimonials
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/back-customers.jpg);
+    background-size: cover;
+    color:white;
+    background-attachment: fixed;
+}
+blockquote
+{
+    padding: 2%;
+    font-style: italic;
+    line-height: 140%;
+    margin-top: 40px;
+    position: relative;
+}
+
+cite{
+    display: block;
+
+}
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+blockquote span img
+{
+    height: 35px;
+    display: block;
+    filter: invert(1);
+    margin-bottom: 10px;
+}
+.section-plans
+{
+    background-color: #eceaea;
+}
+.section-plans h2
+{
+    margin-left: 50px;
+    padding-top: 50px;
+}
+.plan-box
+{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.plan-box div{
+    padding: 15px;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    color: orange;
+}
+.plan-price span{
+    font-size: 50%;
+}
+.plan-box ul
+{
+    list-style: none;
+}
+.plan-box ul li{
+    padding: 5px 0;
+}
+.plan-box .btn-full{
+    background-color: orange;
+    color: #fff;
+    border-radius: 200px;
+}
+.plan-box .btn-ghost{
+    color: orange;
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 200px;
+}
+.plan-box .btn-full:hover
+{
+    background-color: orangered;
+}
+.plan-box .btn-ghost:hover
+{
+    border: 1px solid orangered;
+    color: orangered;
+}
+.plan-box div:last-child{
+    text-align: center;
+}
+.section-form h2{
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea{
+    height: 100%;
+}
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+input[type=submit]{
+    
+    background-color: orange;
+    color: #fff;
+    border-radius: 200px;
+    padding: 5px 10px;
+    color: black;
+}
+input[type=submit]:hover{
+    background-color: orangered;
+}
+footer{
+    background-color: #333 !important;
+    padding: 50px !important;
+    font-size: 90%;
+    color: grey;
+}
+.footer-nav
+{
+    list-style: none;
+    float: left;
+}
+.social-links{
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child
+{
+    margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited
+{
+    color: grey;
+    text-decoration: none;
+}
+.footer-nav li a:hover{
+    color: #fff;
+}
+footer p{
+    text-align: center !important;
+    margin-top: 20px;
+}
+
+.fb:hover{
+    color: rgb(73, 73, 231) !important;
+}
+.twitter:hover{
+    color: aqua !important;
+}
+.google:hover{
+    color: rgb(45, 204, 45) !important;
+}
+.insta:hover{
+    color: rgb(243, 78, 78) !important;
+}
+footer h6 img{
+    height: 30px;
+    width: 30px;
+    animation: beat 3s linear infinite alternate;
+}
+footer h6
+{
+    float: right;
+}
+
+@keyframes beat{
+    0%{transform: scale(1);}
+    20%{transform: scale(1.2);}
+    40%{transform: scale(1);}
+    60%{transform: scale(1.2);}
+    80%{transform: scale(1);}
+    100%{transform: scale(1.2);}
+}
+
+
+
+/*Media queries*/
+@media only screen and (max-width: 480px)
+{
+    nav ul{
+        display: none;
+    }
+    .hero-text-box .btn-ghost{
+        margin-top: 15px;
+    }
+    .hero-text-box h1{
+        font-size: 200%;
+    }
+}
+@media only screen and (max-width: 760px)
+{
+    nav ul {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
